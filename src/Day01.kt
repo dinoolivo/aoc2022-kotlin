@@ -7,11 +7,18 @@ fun main() {
         return input.size
     }
 
-    // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day01_test")
-    check(part1(testInput) == 1)
+    /*fun clusterByCondition(input: List<String>):List<List<Int>>{
+        input.foldIndexed(ArrayList<ArrayList<Int>>()){
+            index, acc, row ->
+        }
+    }*/
 
-    val input = readInput("Day01")
-    println(part1(input))
-    println(part2(input))
+    val testInput = readInput("inputs/Day01_test")
+    println("Test Part 1: " + part1(testInput))
+    println("Test Part 2: " + part2(testInput))
+
+    //execute the two parts on the real input
+    val input = readInput("inputs/Day01")
+    println("Part1: " + part1(input))
+    println("Part2: " + part2(input))
 }
