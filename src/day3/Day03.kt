@@ -1,4 +1,6 @@
-import java.util.stream.Collectors
+package day3
+
+import readInput
 
 fun main() {
 

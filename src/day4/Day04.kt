@@ -1,3 +1,8 @@
+package day4
+
+import day3.Interval
+import readInput
+
 fun main() {
 
     fun convertToIntervals(input: String):Pair<Interval, Interval>{
@@ -5,12 +10,12 @@ fun main() {
         return  Pair(Interval.fromString(rowParts[0]), Interval.fromString(rowParts[1]))
     }
 
-    fun part1(input: List<Pair<Interval,Interval>>): Int = input.sumOf { intervals ->
+    fun part1(input: List<Pair<Interval, Interval>>): Int = input.sumOf { intervals ->
             if (intervals.first.contains(intervals.second) || intervals.second.contains(intervals.first)) 1 as Int else 0
     }
 
 
-    fun part2(input: List<Pair<Interval,Interval>>): Int = input.sumOf { intervals ->
+    fun part2(input: List<Pair<Interval, Interval>>): Int = input.sumOf { intervals ->
             if (intervals.first.overlaps(intervals.second)) 1 as Int else 0
     }
 

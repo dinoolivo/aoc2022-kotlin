@@ -1,3 +1,7 @@
+package day6
+
+import readInputAsText
+
 fun main() {
 
     /**
@@ -19,12 +23,12 @@ fun main() {
 
 
     // verify that the solution works with test data
-    val testInput = readInputSingleLine("inputs/Day06_test")
+    val testInput = readInputAsText("inputs/Day06_test")
     println("Test Part 1: " + part1(testInput))
     println("Test Part 2: " + part2(testInput))
 
     //execute the two parts on the real input
-    val input = readInputSingleLine("inputs/Day06")
+    val input = readInputAsText("inputs/Day06")
     println("Part1: " + part1(input))
     println("Part2: " + part2(input))
 }
